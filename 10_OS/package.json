@@ -1,0 +1,19 @@
+{
+  "name": "10",
+  "version": "1.0.0",
+  "description": "node js tut package 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "10"
+  ],
+  "author": "Valery Blagodarov <11w-walerik@mail.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
