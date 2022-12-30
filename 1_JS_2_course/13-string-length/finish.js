@@ -4,3 +4,6 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+
+let str = 'ldg gkerwp; 235432 ;fdsgh;dsfg sd;fghsdf';
+console.log(str.length);

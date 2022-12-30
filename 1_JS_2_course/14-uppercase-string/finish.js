@@ -12,3 +12,16 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+let str1 = 'sdfsg sdfhdsg sldhg eroih 3425';
+console.log(str1 instanceof String);
+console.log(typeof(str1));
+
+let str2 = str1.toUpperCase();
+console.log(str2);
+
+console.log('---------------------');
+let myString = new String('sjflsf sdjsdf er234');
+console.log(myString instanceof String);
+console.log(typeof(myString));
+console.log(myString.toUpperCase());
