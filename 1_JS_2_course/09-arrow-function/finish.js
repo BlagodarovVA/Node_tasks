@@ -10,3 +10,14 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+// явный возврат
+ const funcA = () => {
+    return 'Hello 1';
+}
+console.log(funcA());
+
+
+// неявный возврат
+const funcB = () => 'Hello 2';
+console.log(funcB());

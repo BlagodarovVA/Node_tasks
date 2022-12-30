@@ -1,0 +1,14 @@
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "583510",
+    "self": "https://support.softclub.by/rest/api/2/issue/583510",
+    "key": "DFASUP-412",
+    "fields": {
+        "status": {
+            "description": "Открыта",
+            "name": "Открыта"
+
+        }
+
+    }
+}

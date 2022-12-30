@@ -1,21 +1,34 @@
-const obj = {
-    userId: 1,
-    id: 1,
-    title: "Test title",
-    status: {
-        completed: false
-    }
-}
+const myArray1 = [0, 1, 2, 3];
 
-//const obj2 = Object.assign({}, obj);
-const obj2 = {...obj};
-obj2.id = 2;
-obj2.status.completed = true;
+myArray1.push(32);
+console.table(myArray1);
+console.log(myArray1.length);
 
-console.log(obj);
-console.log(obj2);
+/*
+const myArray2 = ['ghbbdt', 'vasya', 0, 234, 'sdfs'];
 
+console.log(myArray2);
 
+console.log('-------------------------');
+myArray2.pop();
+console.log(myArray2);
 
+console.log('-------------------------');
+myArray2.unshift('first el');
+console.log(myArray2);
 
-console.log('vasya' || 'frosya');
+console.log('-------------------------');
+myArray2.shift();
+console.log(myArray2);
+
+console.log('-------------------------');
+myArray2.forEach(elem => console.log(elem + 'privet'));
+console.log('myArray2: ',myArray2);
+*/
+
+console.log('-------------------------');
+const newArr = myArray1.map((elem) => {
+    return elem * 3;
+});
+console.log('myArray1: ',myArray1);
+console.log('newArr: ',newArr);
