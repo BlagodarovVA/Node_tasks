@@ -6,3 +6,9 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+
+ const arr = ['PriveT!', 32, true, null, undefined];
+
+arr.push(88, 'test 19');
+console.log(arr.length);
+console.log(arr);

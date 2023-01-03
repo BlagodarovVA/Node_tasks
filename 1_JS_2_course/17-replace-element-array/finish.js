@@ -8,3 +8,10 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+
+ const arr = ['privet', 32, true];
+ console.log(arr);
+
+ arr[1] = 'Valery';
+ console.log(arr);

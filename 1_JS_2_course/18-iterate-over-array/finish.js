@@ -5,3 +5,9 @@
  * 2. Используя один из методов массивов, переберите все элементы
  * и выведите каждый элемент в консоль
  */
+
+ const arr = ['PriveT!', 32, true, null, undefined];
+
+ arr.forEach(element => {
+    console.log(element, '-', typeof element);
+});

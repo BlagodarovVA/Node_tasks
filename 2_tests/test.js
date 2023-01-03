@@ -24,7 +24,7 @@ console.log(myArray2);
 console.log('-------------------------');
 myArray2.forEach(elem => console.log(elem + 'privet'));
 console.log('myArray2: ',myArray2);
-*/
+
 
 console.log('-------------------------');
 const newArr = myArray1.map((elem) => {
@@ -32,3 +32,14 @@ const newArr = myArray1.map((elem) => {
 });
 console.log('myArray1: ',myArray1);
 console.log('newArr: ',newArr);
+*/
+
+const userProfile = {
+    name: 'Valery',
+    commentsQty: 23,
+    age: 32
+}
+
+const { name, age } = userProfile;
+console.log(name);
+console.log(age);
