@@ -19,5 +19,25 @@ const posts = [
 ]
 
 console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
-
 console.log(findPostById(4511, posts)) // undefined
+
+
+// // 1
+// function findPostById(postId, arrOfPosts) {
+//   let res;
+//   arrOfPosts.forEach(element => {
+//     if (element.postId == postId) {
+//       // 3
+//       res = element;
+//       // 4
+//       console.log(element.postId);
+//     }
+//   });
+//   // 2
+//   return res;
+// }
+
+
+function findPostById(postId, posts) {
+  return posts.find((post) => post.postId === postId);
+}
