@@ -32,3 +32,14 @@ console.log(isElementInArray({ title: 'Apple', quantity: 25 }, fruits)) // true
 console.log(isElementInArray({ title: 'Banana' }, fruits)) // false
 
 console.log(isElementInArray(25, primitiveTypesArray)) // true
+
+
+function isElementInArray(searchElement, inputArray) {
+  if (typeof searchElement !== 'object') {
+    return inputArray.includes(searchElement);
+  }
+
+  return inputArray
+      .map((element) => JSON.stringify(element))
+      .includes(JSON.stringify(searchElement));
+}

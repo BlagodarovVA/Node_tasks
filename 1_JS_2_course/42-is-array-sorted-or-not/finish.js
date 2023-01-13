@@ -21,18 +21,33 @@ console.log(arraySortInfo(b)) // Массив отсортирован по во
 console.log(arraySortInfo(c)) // Массив отсортирован по убыванию
 console.log(arraySortInfo(d)) // Массив не отсортирован
 
+
+function arraySortInfo(inputArray) {
+    const allIsNumbers = (currentValue) => typeof currentValue == 'number';
+    const arrSortedToUp = (currentValue, index) => 
+            index > 0 ? currentValue >= inputArray[index - 1] : true;
+    const arrSortedToDown = (currentValue, index) => 
+            index > 0 ? currentValue <= inputArray[index - 1] : true;
+    
+
+    console.log(inputArray);
+
+    if (!inputArray.every(allIsNumbers)) {
+        return 'Некоторые элементы не являются числами';
+    }
+    if (inputArray.every(arrSortedToUp)) {
+        return 'Массив отсортирован по возрастанию';
+    }
+    if (inputArray.every(arrSortedToDown)) {
+        return 'Массив отсортирован по убыванию';
+    }
+    if (!inputArray.every(arrSortedToDown) && !inputArray.every(arrSortedToUp)) {
+        return 'Массив не отсортирован';
+    }
+}
+
 /**
  * ПОДСКАЗКИ
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  *
  *
  *

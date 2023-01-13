@@ -23,3 +23,13 @@ console.log(myNumbers) // [123, 50, 27, 80]
 
 pushIfUnique(myNumbers, 77)
 console.log(myNumbers) // [123, 50, 27, 80, 77]
+
+
+function pushIfUnique(inputArray, newElement) {
+    if (inputArray.find((element) => element === newElement)) {
+        console.log(`Элемент '${newElement}' уже в массиве`);
+        return;
+    };
+    inputArray.push(newElement);
+    return;
+}
