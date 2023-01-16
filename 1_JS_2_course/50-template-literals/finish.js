@@ -7,6 +7,14 @@
  * 3. Ниже приведены примеры вызовов функции.
  */
 
+function templateLiteral(num) {
+    return `Число ${num}.
+Это число ${num >= 10 ? 'больше или равно' : 'меньше'} 10.
+Квадратный корень этого числа - ${Math.sqrt(num)}.
+`
+}
+
+
 // ТЕСТ 1
 const myNumber = 9
 console.log(templateLiteral(myNumber))

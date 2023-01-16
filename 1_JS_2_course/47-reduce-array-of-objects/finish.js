@@ -29,3 +29,11 @@ console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 console.log(popularPostsIds(inputPosts, 15)) // [3421]
 
 console.log(popularPostsIds(inputPosts, 50)) // []
+
+
+function popularPostsIds(posts, minimalComentsQty) {
+  return posts.reduce((accumulator, currentValue) => 
+                  currentValue.comments >= minimalComentsQty 
+                  ? accumulator.concat([currentValue.postId]) : accumulator,
+                  []);
+}
