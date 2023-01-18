@@ -17,6 +17,13 @@ let person = {
   cartId: 435,
 }
 
+// собираем оставшиеся свойства в новый объект person
+{
+let _id, processed, cart;   // переменные доступны только внутри блока
+({ _id, processed, cart, ...person } = person);
+}
+
+
 console.log(person)
 /*
 {
