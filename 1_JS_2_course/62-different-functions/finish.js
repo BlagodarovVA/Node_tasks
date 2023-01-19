@@ -7,10 +7,21 @@
  * 3. Также вызовите обе функции
  */
 
+console.log(firstFunction(5, 7));
+
 function firstFunction(a, b) {
   return a + b
 }
 
+// можно присвоить новое значение переменной
+// firstFunction = '123';
+
+
+// нельзя вызвать функцию перед инициализацией
 const secondFunction = function (a, b) {
   return a + b
 }
+
+// новое значение данной функции присвоить уже не выйдет
+
+console.log(secondFunction(10, 14));

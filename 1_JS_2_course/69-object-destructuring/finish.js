@@ -12,7 +12,12 @@ const objectWithNumbers = {
   z: 3,
 }
 
+
 // Создайте функцию здесь
+function mult({x, y, z}) {
+  return x * y * z;
+}
+
 
 const result = mult(objectWithNumbers)
 console.log(result)
