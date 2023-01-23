@@ -30,3 +30,23 @@ const greeting2 = createGreeting()
 
 console.log(greeting2.greet('Emily'))
 // Hey, this is Emily
+
+
+
+function createGreeting() {
+    let greetingString = 'Hey, this is';
+
+    function greet(name) {
+        return `${greetingString} ${name}`;
+    }
+
+    function changeGreeting(newGreating) {
+        greetingString = newGreating;
+    }
+
+    return {
+        greet,
+        changeGreeting
+    }
+
+}
