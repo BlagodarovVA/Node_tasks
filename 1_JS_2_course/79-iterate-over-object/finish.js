@@ -17,6 +17,7 @@ const objectWithNumbers = {
 }
 
 
+// 1
 // function sumObjectValues(obj) {
 //   let sum = 0;
 //   Object.values(obj).forEach(val => {
@@ -28,7 +29,9 @@ const objectWithNumbers = {
 // }
 
 
+// 2
 function sumObjectValues(obj) {
+  console.log(Object.values(obj));
   return Object.values(obj).reduce(
     (accum, val) => typeof val === 'number' ? accum + val : accum,
   0);
